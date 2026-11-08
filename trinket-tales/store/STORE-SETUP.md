@@ -1,125 +1,220 @@
-# Trinket Tales: Shopify store setup (phone-friendly)
+# Trinket Tales: final store setup (phone-friendly)
 
 Everything here matches the four assignments: same product, price, keywords and supplier.
-On a phone, open **admin.shopify.com** in Chrome and switch on "Desktop site". The theme editor works better there than in the Shopify app.
+On a phone, open **admin.shopify.com** in Chrome and turn on "Desktop site". The theme editor works better there.
+
+**Files you need** (all in this folder):
+- `Trinket-Tales-Theme.zip` (theme v3)
+- `product-import.csv`
+- `photos/01–06`
+- `brand/trinket-tales-logo-round.png`
+- `brand/trinket-tales-favicon-512.png`
 
 ---
 
-## 0. Before you start (5 min)
+## A. Set up the store, step by step (about 30 min)
 
-- [ ] **Store currency must be PKR.** Settings → Store details → Store currency → Pakistani Rupee (PKR). The CSV prices (1200 / 1500) are read in the store currency, so if it is USD you'd get $1,200.
-- [ ] **Security.** The login was shared on WhatsApp. After marks are in: change the password and turn on 2-step verification (Settings → Users → your account → Security).
+**1. Store currency**
+- Settings → Store details → Currency → **PKR**.
 
-## 1. Product (10 min)
+**2. Product**
+- Products → **Import** → `product-import.csv` → Import.
+  - Skip this if the product already exists. Just check that its URL handle is `mini-makeup-kit-for-girls`.
+- Open the product → **Media** → add photos 01 to 06 in order.
+- Variants → open each colour → **Add image** → pick that colour's photo.
 
-1. Products → **Import** → choose `product-import.csv` → Upload and preview → Import.
-   This creates **Mini Makeup Kit for Girls - Cute Gift Pouch** with 5 colours, SKUs, Rs 1,200 / Rs 1,500, tags, SEO title and meta description.
-2. Open the product → **Media** → add the 6 photos from `photos/` in this order:
-   1. `01-strawberry-pink.jpg` (main) 2. `02-cherry-red.jpg` 3. `03-kiwi-green.jpg` 4. `04-orange-sunshine.jpg` 5. `05-blueberry-blue.jpg` 6. `06-all-five-colours.jpg`
-3. Click each image → **Add alt text** (copy from Assignment 3, section 3).
-4. Variants → open each colour → **Add image** → pick that colour's photo. Now tapping a colour changes the picture.
-5. If the old listing (made earlier) is still there, set it to **Draft** so there's only one product.
+**3. Theme**
+- Online Store → Themes → **Add theme → Upload zip file** → `Trinket-Tales-Theme.zip`. Don't unzip it first.
+- On the new theme tap **Customize**:
+  - Theme settings → **Logo** → `trinket-tales-logo-round.png`.
+  - Theme settings → **Favicon** → `trinket-tales-favicon-512.png`.
+  - **Save**.
+- Back in Themes: **⋯ → Publish** on the new theme. Then **⋯ → Remove** on older uploaded copies.
 
-**Collections:** Products → Collections → Create
-- **Gift Pouches** (Manual) → add the product.
-- **Gifts Under Rs 1,500** (Automated) → condition: Price is less than 1500.
+**4. Pages:** Online Store → Pages. Create these three, then pick the **Theme template** at the bottom of each page.
 
-## 2. Look and feel: upload the ready theme (5 min)
-
-`Trinket-Tales-Theme.zip` (v2) is Shopify's official free **Dawn 16.1.1** theme with our design and a few custom sections added. Theme Check shows no new issues compared with stock Dawn.
-
-1. Do step 1 (product import) **first**. The home page finds the product by its handle `mini-makeup-kit-for-girls`.
-2. Online Store → Themes → **Add theme → Upload zip file** → the theme ZIP. Don't unzip it first.
-3. On the new theme: **Customize** → Theme settings → **Logo** → `brand/trinket-tales-logo-round.png`. Then **Favicon** → `brand/trinket-tales-favicon-512.png`. Save.
-   A newly uploaded theme starts without a logo, so do this again after each upload.
-4. **Preview**, then **⋯ → Publish**. Remove older uploaded copies afterwards (⋯ → Remove).
-
-What the theme does:
-- **Brand look:** cream `#FBF1E8`, blush `#F6E3DF`, cocoa `#3B2A25` and rose `#A85562`. Lora headings, pill buttons and rounded photos, plus a small bow ornament taken from the logo.
-- **Home page:**
-  1. Hero with the pouch photo, price and *Shop the pouch* button.
-  2. A row of three promises.
-  3. **Pick your colour** row, built automatically from the product's colours. Each card opens that colour.
-  4. The pouch with *Add to cart* and *Buy it now*.
-  5. FAQ.
-  6. Brand story.
-- **Product page:**
-  - Colour pills and *Buy it now*.
-  - **Delivery date line** ("Order today, arrives Wed 11 – Fri 13 Nov").
-  - Trust icons: COD, easy returns, ready to gift.
-  - Delivery and Returns tabs, then 3 quick FAQs.
-- **Sticky Add to cart on mobile:** a bar slides up from the bottom once the main button scrolls away. It shows the photo, price and chosen colour.
-- **Cart drawer:** a progress bar shows "Add Rs 1,300 more for free delivery". It has a gift-note box and *Buy it now* for a faster checkout.
-- **Equal image sizes:** every product photo, card and colour tile shows in the same 4:5 frame. Photos of any size are cropped neatly to fit.
-- **Pages:** custom templates for About, FAQ and Contact, plus a styled default page and styled policy pages.
-- **Settings:** Theme settings → **Trinket Tales** has the free-delivery amount and the delivery-day range.
-
-If the headings show in the default font, pick **Lora** under Theme settings → Typography → Headings.
-
-## 3. Pages, policies and menus (10 min)
-
-Online Store → **Pages** → Add page. On each page, scroll to **Theme template** and pick the one in the table. Publish the theme first, because the list only shows the live theme's templates.
-
-| Page title | URL handle (under Search engine listing) | Theme template | What to put in the page text |
+| Page title | URL handle | Theme template | Page text |
 |---|---|---|---|
-| About Us | `about-us` | **about** | The About text from the appendix |
-| FAQ | `faq` | **faq** | Leave empty. The questions are built into the template |
-| Contact | `contact` | **contact** | Leave empty. The form is built in |
+| About Us | `about-us` | **about** | About text from the appendix |
+| FAQ | `faq` | **faq** | leave empty (questions are built in) |
+| Contact | `contact` | **contact** | leave empty (form is built in) |
 
-Keep the handles exactly `faq` and `contact`, because the FAQ and Contact pages link to each other through them.
+**5. Policies:** Settings → Policies.
+- Paste **Refund** and **Shipping** from the appendix.
+- **Privacy** and **Terms** → "Create from template".
 
-- Settings → **Policies** → paste **Refund** and **Shipping** from the appendix. Use "Create from template" for **Privacy** and **Terms of service**. The theme styles these pages automatically.
-- Online Store → **Navigation**
-  - Main menu: Home · Shop (→ the product or Gift Pouches) · About Us · FAQ · Contact
-  - Footer menu: FAQ · Contact · Shipping Policy · Refund Policy · Privacy Policy
+**6. Menus:** Online Store → Navigation.
+- **Main menu:** Home · Shop (→ the product) · About Us · FAQ · Contact
+- **Footer menu:** FAQ · Contact · Shipping Policy · Refund Policy · Privacy Policy
 
-## 4. Payment and delivery (5 min)
+**7. Payment:** Settings → Payments → Manual payment methods → **Cash on Delivery (COD)** → Activate.
 
-- Settings → **Payments** → Manual payment methods → **Cash on Delivery (COD)** → Activate.
-- Settings → **Shipping and delivery** → General shipping rates → Pakistan zone (add it if missing):
-  - `Standard delivery (3–5 working days)` – Rs 200
-  - `Free delivery` – Rs 0, condition: order price Rs 2,500 and up
+**8. Delivery:** Settings → Shipping and delivery → General rates → Pakistan.
+- `Standard delivery (3–5 working days)` → Rs 200.
+- `Free delivery` → Rs 0, condition: order price Rs 2,500 and up.
 
-## 5. Dropshipping connection
+**9. Check on the phone**
+- Open the store.
+- Tap a colour on the home page.
+- Scroll down the product page: the sticky **Add to cart** bar appears.
+- Add to cart: the drawer shows the free-delivery bar.
+- Go to checkout: **Cash on Delivery** shows as a payment option.
 
-**A) Markaz – main supplier (Pakistan, COD, 2–5 days)**
-1. Install **Markaz** from the Play Store and sign up as a reseller.
-2. Search `makeup kit for girls` / `kids makeup pouch` and pick the pouch kit that matches our photos. Save it to favourites and note its Markaz price.
-3. Keep our own Shopify listing (our photos and text). When a Shopify order comes in: confirm it on WhatsApp → place the same order in Markaz with the customer's name, address and COD amount (Rs 1,200 + delivery). Markaz delivers and collects the cash; our margin is paid to us.
-4. Markaz also has **Export to My Store** (exports a product file for Shopify import) if you want to add more Markaz products later.
+**10. Share**
+- Online Store → Preferences: copy the store password, or pick a plan to remove it.
+- Send ma'am the link, plus the password if the store still has one.
+- Put the store link into the 4 Word files → save as PDF.
 
-**B) DSers + AliExpress – automatic link (backup)**
-1. Shopify → Apps → search **DSers** → Install (free Basic plan).
-2. Create the DSers account and link an AliExpress account.
-3. On AliExpress find a matching kit (search `kids makeup bag lipstick nail polish hand cream set`) and copy the product link.
-4. DSers → My Products → *Mini Makeup Kit for Girls* → **Mapping** → Basic mapping → paste the AliExpress link → match each of the 5 colours → Save.
-5. From then on, orders for this product appear in DSers → **Place order to AliExpress** (one click) and tracking syncs back to Shopify.
+**11. After marks**
+- Change the Shopify password.
+- Turn on 2-step verification.
 
-## 6. Instagram (@trinket_tales_1)
+---
 
-- Edit profile → Links → add the store link.
-- Post the 5 colour photos as a carousel with the caption from Assignment 3; post the packing video as a reel.
-- Optional, takes days for Meta approval: Shopify → Sales channels → **Facebook & Instagram** → connect the account for Instagram Shopping tags. Not needed for the assignment.
+## B. What the theme does (v3)
 
-## 7. Sharing the store with ma'am
+- **Banner hero:**
+  - Full-width image with the text over a soft fade.
+  - Separate desktop and mobile images.
+  - Price, "Cash on delivery" and a *Shop the pouch* button.
+  - Built-in banner images made from the real product photos are used until you upload your own.
+- **Trust bar:** cash on delivery, 3–5 day delivery and ready to gift, in one short row.
+- **Pick your colour:** white cards, one per colour, each with its price. A card opens that colour.
+- **Quick answers:** 3 folded questions.
+- **Brand strip above the footer:** logo, tagline, charm icons from the logo, and an Instagram link.
+- **Logo details everywhere:**
+  - The bow ornament.
+  - ✦ sparkles around small headings.
+  - The *line ♥ line* divider under headings.
+  - Rose italic words, e.g. "Small things, *big happiness*".
+- **Product page:**
+  - Colour pills, Add to cart and *Buy it now*.
+  - Delivery date line ("Order today, arrives Wed 11 – Fri 13 Nov").
+  - Trust icons.
+  - Details folded into short sections: What's inside, Delivery, Returns, Children, Gift note.
+- **Mobile sticky Add to cart:** slides up when the main button scrolls away.
+- **Cart drawer:** "Add Rs 1,300 more for free delivery" progress bar, plus a gift-note box.
+- **Equal image sizes:** every product photo, card and colour tile is shown in the same 4:5 frame.
+- **Shorter mobile pages:** smaller spacing, banner text hidden on mobile, long text folded away.
+- **Settings:** Theme settings → **Trinket Tales** sets the free-delivery amount and the delivery days.
 
-- Trial stores are password protected. Online Store → Preferences → Password protection shows the password.
-  Either pick a plan to remove the password, or send ma'am the link **and** the password.
-- Put the store link and product link into the **Store link / Product link** lines in the Word files, then save as PDF.
+---
+
+## C. Your own banner images (optional, for a more premium look)
+
+**Where to upload:** Customize → Home page → **Banner** section → **Desktop image** and **Mobile image** → Save.
+
+| Image | Best size | Keep calm (no busy detail) | Keep important things |
+|---|---|---|---|
+| Desktop | 1920 × 800 px (1536 × 1024 also works) | left 45% (text sits there) | right half, away from top/bottom 15% |
+| Mobile | 1080 × 1350 px (1024 × 1536 also works) | bottom 40% (text sits there) | top half, centred |
+
+The section crops images to fit the banner automatically, so ChatGPT's sizes work as they are.
+
+**Honest-photo rule:** use your real product photo and keep the pouch exactly as it is. Customers and ma'am should see the real product, so a background change is fine but a redrawn product is not.
+
+**ChatGPT prompt: desktop banner** (attach `01-strawberry-pink.jpg`):
+
+> Edit the photo I attached into a website banner, landscape 3:2 (1536×1024).
+> Keep the product pouch exactly as it is: same packaging, colours, printed text and items inside. Don't redraw, add or remove anything on the product.
+> Cut the pouch out from the wall and hand, and place it on the right side of the image, slightly tilted, with a soft natural shadow.
+> Background: smooth, clean studio backdrop in cream (#FBF1E8) fading to soft blush pink (#F6E3DF) on the right.
+> Add a few subtle props around the pouch: one pink satin ribbon bow, three or four small pearl beads and a little heart confetti in rose (#C97B84). Keep them small and tidy.
+> Leave the left 45% of the image completely empty (only the soft background) for text. Keep the top and bottom 15% free of important details.
+> Soft daylight, realistic photo look, premium and minimal. No text, no logos, no watermark.
+
+**ChatGPT prompt: mobile banner** (attach the same photo):
+
+> Edit the photo I attached into a mobile website banner, portrait 2:3 (1024×1536).
+> Keep the product pouch exactly as it is: same packaging, colours, printed text and items inside. Don't redraw, add or remove anything on the product.
+> Cut the pouch out from the wall and hand, and place it in the upper middle of the image, slightly tilted, with a soft natural shadow.
+> Background: smooth studio backdrop, soft blush pink (#F6E3DF) at the top fading to cream (#FBF1E8) at the bottom.
+> Add a few subtle props near the pouch: one pink satin ribbon bow, a few small pearl beads and little rose (#C97B84) heart confetti.
+> Leave the bottom 40% of the image empty and calm (only the cream background) for text. Keep 8% margin on the left and right.
+> Soft daylight, realistic photo look, premium and minimal. No text, no logos, no watermark.
+
+**Optional prompt: all five colours** (attach photos 01–05):
+
+> Combine the five product photos I attached into one landscape 3:2 image (1536×1024). Cut each pouch out from its background and arrange them in a neat fan on the right side, the pink one in front. Keep every pouch exactly as in its photo, with no changes to packaging, colours or text. Same cream-to-blush studio background, soft shadows, a pink ribbon bow and a few small pearl beads. Leave the left 45% empty for text. No text, no logos, no watermark.
+
+**Check before uploading:** compare the result with the real pouch. If anything on the product changed, ask ChatGPT to redo it, or keep the built-in banner.
+
+---
+
+## D. Dropshipping: accounts, steps and what to paste
+
+Two parts, both explained in Assignment 2:
+- **DSers + AliExpress** gives the automatic link inside Shopify. Use it to show the connection.
+- **Markaz** is the local Pakistan supplier for cash-on-delivery orders.
+
+### D1. DSers + AliExpress (connected inside Shopify), about 15 min
+
+**Accounts to create**
+1. **AliExpress account** (free): aliexpress.com or the AliExpress app → Sign up with the store email. A payment card is only needed when you place a real order.
+2. **DSers account:** created when you install the app. Choose "Log in with Shopify".
+
+**Steps**
+1. **Install DSers:** Shopify admin → Apps → search **DSers** → Install. The free Basic plan is enough.
+2. **Link AliExpress:** in DSers, follow the prompt to **Link AliExpress** → log in → Authorize.
+3. **Find the supplier:** in the AliExpress app search `kids makeup set bag lipstick nail polish hand cream`. Pick a listing that:
+   - matches our pouch,
+   - has a rating of 4.5 or more and 100+ sold,
+   - shows **ships to Pakistan**.
+
+   Then tap **Share → Copy link**.
+4. **Map our product:** DSers → **Products** → *Mini Makeup Kit for Girls* → **Mapping** icon → **Basic mapping**.
+   - Paste the AliExpress link in the supplier box and confirm.
+   - Match each colour (Strawberry Pink, Cherry Red, Kiwi Green, Orange Sunshine, Blueberry Blue) to the closest AliExpress option.
+   - **Save**.
+5. **Proof for the assignment:** take a screenshot of the mapping screen showing our product linked to the AliExpress supplier.
+6. **When an order comes in:** DSers → **Open orders** → select it → **Place order to AliExpress**.
+   - DSers fills in the customer's address.
+   - Tracking comes back to Shopify by itself.
+
+| What to paste | Where |
+|---|---|
+| AliExpress product link | DSers → Products → Mapping → supplier box |
+| Nothing else | DSers copies customer details from Shopify itself |
+
+### D2. Markaz (local Pakistan supplier, COD), about 10 min
+
+**Account to create**
+- Install **Markaz** from the Play Store → sign up with your mobile number.
+- Add a bank, Easypaisa or JazzCash account so your profit can be paid out.
+
+**Steps**
+1. Search `makeup kit for girls` / `kids makeup pouch`, then open the kit that matches our pouch and save it.
+2. When a Shopify order comes in, confirm it with the customer on WhatsApp first.
+3. Place the same order in Markaz, using the details below.
+4. Markaz delivers and collects the cash, and your margin goes to your Markaz wallet.
+
+| What to paste | Where |
+|---|---|
+| Customer name, phone, full address, city | Markaz order form |
+| COD amount (Rs 1,200 × quantity + Rs 200 delivery, or no delivery over Rs 2,500) | Markaz "COD / selling price" field |
+| Shopify order number (e.g. #1001) | Markaz order note, to match the two |
+
+Markaz also has **Export to My Store**, which downloads a product file you can import into Shopify if you want more Markaz products later.
+
+The DSers and Markaz screens can change slightly. If a button has a different name, look for the closest match.
+
+---
 
 ## Final checklist
 
 - [ ] Currency PKR
-- [ ] Product imported, 6 photos, alt text, colour images linked
-- [ ] Theme ZIP (v2) uploaded, logo + favicon added, previewed and published
-- [ ] About / FAQ / Contact pages set to the about / faq / contact templates
-- [ ] About / FAQ / Contact pages + Refund / Shipping / Privacy / Terms
-- [ ] Main and footer menus
-- [ ] COD on, delivery rates set
-- [ ] Markaz account + matching product saved (DSers optional)
-- [ ] Instagram bio link + first post
-- [ ] Store link filled in all four assignments
-- [ ] Password changed + 2-step verification after submission
+- [ ] Product: 6 photos, each colour linked to its photo, handle `mini-makeup-kit-for-girls`
+- [ ] Theme v3 uploaded → logo + favicon → published, old copies removed
+- [ ] About / FAQ / Contact pages on the about / faq / contact templates
+- [ ] Refund + Shipping policies pasted; Privacy + Terms from template
+- [ ] Main + footer menus
+- [ ] COD on, Rs 200 delivery, free over Rs 2,500
+- [ ] Phone check: banner, colours, sticky Add to cart, cart progress bar, COD at checkout
+- [ ] DSers installed, AliExpress linked, product mapped (screenshot saved)
+- [ ] Markaz account created, matching kit saved
+- [ ] Instagram bio: store link
+- [ ] Store link in all four assignments → PDF
+- [ ] After marks: new password + 2-step verification
 
 ---
 
