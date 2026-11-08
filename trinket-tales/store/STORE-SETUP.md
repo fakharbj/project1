@@ -26,36 +26,52 @@ On a phone, open **admin.shopify.com** in Chrome and switch on "Desktop site". T
 
 ## 2. Look and feel: upload the ready theme (5 min)
 
-`Trinket-Tales-Theme.zip` is Shopify's official free **Dawn 16.1.1** theme with our design already set. Only 7 files differ from stock Dawn, so it stays fast and easy to update.
+`Trinket-Tales-Theme.zip` (v2) is Shopify's official free **Dawn 16.1.1** theme with our design and a few custom sections added. Theme Check shows no new issues compared with stock Dawn.
 
-1. Do step 1 (product import) **first**. The home page shows the product by its handle `mini-makeup-kit-for-girls`.
-2. Online Store → Themes → **Add theme → Upload zip file** → `Trinket-Tales-Theme.zip`.
-3. On the new theme: **Customize** → Theme settings → **Logo** → upload `brand/trinket-tales-logo-round.png`. Then **Favicon** → `brand/trinket-tales-favicon-512.png`. Save.
-4. Check it with **Preview**, then **Publish**.
+1. Do step 1 (product import) **first**. The home page finds the product by its handle `mini-makeup-kit-for-girls`.
+2. Online Store → Themes → **Add theme → Upload zip file** → the theme ZIP. Don't unzip it first.
+3. On the new theme: **Customize** → Theme settings → **Logo** → `brand/trinket-tales-logo-round.png`. Then **Favicon** → `brand/trinket-tales-favicon-512.png`. Save.
+   A newly uploaded theme starts without a logo, so do this again after each upload.
+4. **Preview**, then **⋯ → Publish**. Remove older uploaded copies afterwards (⋯ → Remove).
 
-What's already set in the theme:
-- **Colours:** cream `#FBF1E8`, blush `#F6E3DF`, cocoa `#3B2A25`, rose `#A85562`. Text and buttons pass contrast checks.
-- **Fonts and shapes:** Lora headings, Assistant body, pill buttons, rounded cards and photos.
-- **Header:** logo centred. Announcement bar rotates "Cash on delivery all over Pakistan" / "Free delivery on orders over Rs 2,500".
+What the theme does:
+- **Brand look:** cream `#FBF1E8`, blush `#F6E3DF`, cocoa `#3B2A25` and rose `#A85562`. Lora headings, pill buttons and rounded photos, plus a small bow ornament taken from the logo.
 - **Home page:**
-  1. Hero: *Small things, big happiness* with a Shop button.
-  2. The pouch with colour pills and Add to cart.
-  3. Three promises: COD, 3–5 days, ready to gift.
-  4. FAQ: what's inside, age and safety, payment and delivery, returns.
-  5. Short brand story with an Instagram button.
-- **Product page:** thumbnail gallery, colour pills, trust icons, description, then *Delivery and payment* and *Returns* tabs.
-- **Cart and footer:** the cart opens as a drawer with a gift-note box. Footer is cocoa with brand text, Help menu, Instagram link, payment icons and policy links.
-- **Custom CSS:** a small file, `assets/trinket-tales.css`: rose captions, thin heading underline, rose sale price and rose selected colour pill.
+  1. Hero with the pouch photo, price and *Shop the pouch* button.
+  2. A row of three promises.
+  3. **Pick your colour** row, built automatically from the product's colours. Each card opens that colour.
+  4. The pouch with *Add to cart* and *Buy it now*.
+  5. FAQ.
+  6. Brand story.
+- **Product page:**
+  - Colour pills and *Buy it now*.
+  - **Delivery date line** ("Order today, arrives Wed 11 – Fri 13 Nov").
+  - Trust icons: COD, easy returns, ready to gift.
+  - Delivery and Returns tabs, then 3 quick FAQs.
+- **Sticky Add to cart on mobile:** a bar slides up from the bottom once the main button scrolls away. It shows the photo, price and chosen colour.
+- **Cart drawer:** a progress bar shows "Add Rs 1,300 more for free delivery". It has a gift-note box and *Buy it now* for a faster checkout.
+- **Equal image sizes:** every product photo, card and colour tile shows in the same 4:5 frame. Photos of any size are cropped neatly to fit.
+- **Pages:** custom templates for About, FAQ and Contact, plus a styled default page and styled policy pages.
+- **Settings:** Theme settings → **Trinket Tales** has the free-delivery amount and the delivery-day range.
 
 If the headings show in the default font, pick **Lora** under Theme settings → Typography → Headings.
 
 ## 3. Pages, policies and menus (10 min)
 
-- Online Store → **Pages** → Add page: **About Us**, **FAQ**, **Contact** (for Contact choose template `contact`). Text is in the appendix.
-- Settings → **Policies** → paste **Refund** and **Shipping** policy from the appendix; use "Create from template" for **Privacy** and **Terms of service**.
+Online Store → **Pages** → Add page. On each page, scroll to **Theme template** and pick the one in the table. Publish the theme first, because the list only shows the live theme's templates.
+
+| Page title | URL handle (under Search engine listing) | Theme template | What to put in the page text |
+|---|---|---|---|
+| About Us | `about-us` | **about** | The About text from the appendix |
+| FAQ | `faq` | **faq** | Leave empty. The questions are built into the template |
+| Contact | `contact` | **contact** | Leave empty. The form is built in |
+
+Keep the handles exactly `faq` and `contact`, because the FAQ and Contact pages link to each other through them.
+
+- Settings → **Policies** → paste **Refund** and **Shipping** from the appendix. Use "Create from template" for **Privacy** and **Terms of service**. The theme styles these pages automatically.
 - Online Store → **Navigation**
-  - Main menu: Home · Shop (→ Gift Pouches) · About Us · Contact
-  - Footer menu: FAQ · Shipping Policy · Refund Policy · Privacy Policy
+  - Main menu: Home · Shop (→ the product or Gift Pouches) · About Us · FAQ · Contact
+  - Footer menu: FAQ · Contact · Shipping Policy · Refund Policy · Privacy Policy
 
 ## 4. Payment and delivery (5 min)
 
@@ -95,7 +111,8 @@ If the headings show in the default font, pick **Lora** under Theme settings →
 
 - [ ] Currency PKR
 - [ ] Product imported, 6 photos, alt text, colour images linked
-- [ ] Theme ZIP uploaded, logo + favicon added, previewed and published
+- [ ] Theme ZIP (v2) uploaded, logo + favicon added, previewed and published
+- [ ] About / FAQ / Contact pages set to the about / faq / contact templates
 - [ ] About / FAQ / Contact pages + Refund / Shipping / Privacy / Terms
 - [ ] Main and footer menus
 - [ ] COD on, delivery rates set
