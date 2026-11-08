@@ -17,6 +17,7 @@ Each part comes as `.docx` (editable) and `.pdf`.
 
 ## Store kit
 - `store/STORE-SETUP.md` – step-by-step setup on a phone: product import, theme, pages, policies, COD, delivery rates, Markaz / DSers dropshipping, Instagram.
+- `store/Trinket-Tales-Theme.zip` – ready-to-upload custom theme (official Dawn 16.1.1 + our colours, fonts, home page, product page). Upload after importing the product.
 - `store/product-import.csv` – Shopify product import (5 colours, prices, SKUs, SEO). Store currency must be PKR.
 - `store/photos/` – 6 listing photos, all cropped to 4:5.
 - `store/brand/` – logo (round PNG, transparent), square logo, favicon.

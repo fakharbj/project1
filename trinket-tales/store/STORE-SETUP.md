@@ -24,35 +24,30 @@ On a phone, open **admin.shopify.com** in Chrome and switch on "Desktop site". T
 - **Gift Pouches** (Manual) → add the product.
 - **Gifts Under Rs 1,500** (Automated) → condition: Price is less than 1500.
 
-## 2. Look and feel (15 min)
+## 2. Look and feel: upload the ready theme (5 min)
 
-Online Store → Themes → **Dawn** → Customize.
+`Trinket-Tales-Theme.zip` is Shopify's official free **Dawn 16.1.1** theme with our design already set. Only 7 files differ from stock Dawn, so it stays fast and easy to update.
 
-**Theme settings**
-| Setting | Value |
-|---|---|
-| Logo | `brand/trinket-tales-logo-round.png`, width 90 px |
-| Favicon | `brand/trinket-tales-favicon-512.png` |
-| Colour scheme 1 – Background | `#FBF1E8` (cream) |
-| Text | `#3B2A25` (cocoa) |
-| Solid button background | `#A85562` (rose) |
-| Solid button label | `#FFFFFF` |
-| Colour scheme 2 – Background | `#F6E3DF` (blush, for alternating sections) |
-| Headings font | Lora |
-| Body font | Jost |
-| Social media → Instagram | `https://www.instagram.com/trinket_tales_1` |
+1. Do step 1 (product import) **first**. The home page shows the product by its handle `mini-makeup-kit-for-girls`.
+2. Online Store → Themes → **Add theme → Upload zip file** → `Trinket-Tales-Theme.zip`.
+3. On the new theme: **Customize** → Theme settings → **Logo** → upload `brand/trinket-tales-logo-round.png`. Then **Favicon** → `brand/trinket-tales-favicon-512.png`. Save.
+4. Check it with **Preview**, then **Publish**.
 
-**Home page, top to bottom**
-1. **Announcement bar:** `Cash on delivery all over Pakistan | Free delivery over Rs 2,500`
-2. **Header:** logo centred.
-3. **Image with text:** image `01-strawberry-pink.jpg`. Heading `Small things, big happiness`. Text `Cute mini makeup pouches, packed and ready to gift.` Button `Shop now` → the product.
-4. **Featured product:** Mini Makeup Kit for Girls.
-5. **Multicolumn (3 columns, no images):**
-   - `Cash on delivery` / `Pay the rider when your parcel arrives.`
-   - `3 to 5 day delivery` / `Delivered all over Pakistan.`
-   - `Ready to gift` / `Every pouch arrives gift-ready.`
-6. **Rich text:** heading `About Trinket Tales`, text = first two lines of the About page below, button `Read more` → About page.
-7. Delete any leftover demo sections (Image banner with sample image, Collage, Video, etc.).
+What's already set in the theme:
+- **Colours:** cream `#FBF1E8`, blush `#F6E3DF`, cocoa `#3B2A25`, rose `#A85562`. Text and buttons pass contrast checks.
+- **Fonts and shapes:** Lora headings, Assistant body, pill buttons, rounded cards and photos.
+- **Header:** logo centred. Announcement bar rotates "Cash on delivery all over Pakistan" / "Free delivery on orders over Rs 2,500".
+- **Home page:**
+  1. Hero: *Small things, big happiness* with a Shop button.
+  2. The pouch with colour pills and Add to cart.
+  3. Three promises: COD, 3–5 days, ready to gift.
+  4. FAQ: what's inside, age and safety, payment and delivery, returns.
+  5. Short brand story with an Instagram button.
+- **Product page:** thumbnail gallery, colour pills, trust icons, description, then *Delivery and payment* and *Returns* tabs.
+- **Cart and footer:** the cart opens as a drawer with a gift-note box. Footer is cocoa with brand text, Help menu, Instagram link, payment icons and policy links.
+- **Custom CSS:** a small file, `assets/trinket-tales.css`: rose captions, thin heading underline, rose sale price and rose selected colour pill.
+
+If the headings show in the default font, pick **Lora** under Theme settings → Typography → Headings.
 
 ## 3. Pages, policies and menus (10 min)
 
@@ -100,8 +95,7 @@ Online Store → Themes → **Dawn** → Customize.
 
 - [ ] Currency PKR
 - [ ] Product imported, 6 photos, alt text, colour images linked
-- [ ] Logo, favicon, colours, fonts
-- [ ] Home page sections, demo content removed
+- [ ] Theme ZIP uploaded, logo + favicon added, previewed and published
 - [ ] About / FAQ / Contact pages + Refund / Shipping / Privacy / Terms
 - [ ] Main and footer menus
 - [ ] COD on, delivery rates set
