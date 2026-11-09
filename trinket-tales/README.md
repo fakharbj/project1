@@ -16,8 +16,11 @@ Each part comes as `.docx` (editable) and `.pdf`.
 **Before submitting:** fill in Roll No. and Course in the `.docx` files (store and product links are already filled in), then save as PDF.
 
 ## Store kit
+- `FINAL-DELIVERY.md` / `.pdf` – what to hand in, final links, last checks on the live store.
 - `store/FINAL-CHECKLIST.md` / `.pdf` – every step to production, final links, and text to paste (policies, About).
-- `store/Trinket-Tales-Theme.zip` – theme v7 (official Dawn 16.1.1 + brand design): calm product pages, left-aligned layout, hero that fits the image, WhatsApp chat, banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, photo gallery, quick answers. Delivery dates switch on the `dropship` tag.
+- `store/Trinket-Tales-Theme.zip` – theme v8 (official Dawn 16.1.1 + brand design): calm product pages, left-aligned layout, hero that fits the image, WhatsApp chat, banner, trust bar, shop-by-category tiles, featured product, product grid, Instagram-style welcome card, photo gallery, quick answers. Delivery dates switch on the `dropship` tag.
+- `store/code-update-v8/` – the v8 changes as copy-paste files, for a live theme that is already set up.
+- AliExpress products on the store (through DSers): Dreamy Kids Makeup Set (`aliexpress.com/item/1005012993298696.html`, main product) and Bohemian Flower Beaded Bracelet Set (`aliexpress.com/item/1005011994527815.html`).
 - `store/instagram-products/` – import file for the Instagram products (Flower Bead Bracelet Set, Pearl Bracelet with Jade Bead) plus cleaned product photos.
 - `store/brand/banner-desktop-chatgpt.jpg` – desktop hero banner, cropped for the banner section.
 - `store/product-import.csv` – import file for the bear-bag pouch (own Instagram stock, not dropshipped). Store currency must be PKR.

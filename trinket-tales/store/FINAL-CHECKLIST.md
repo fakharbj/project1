@@ -31,7 +31,8 @@ Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a p
   - Bracelet set: `bracelet-set-pink/purple/yellow/red.jpg`. Under Variants, link each colour to its photo.
   - Pearl bracelet: `pearl-jade-bracelet.jpg`.
 - [ ] **Tag the products you already have:** Products → tick the products → **More actions → Add tags**:
-  - The 2 DSers products → `kids-makeup, dropship`
+  - Dreamy Kids Makeup Set (from DSers) → `kids-makeup, dropship`
+  - Flower bead bracelet set (from DSers) → `bracelets, dropship`
   - Mini makeup pouch → `kids-makeup, gift-boxes`
   - Aesthetic Self-Care Gift Box and Customize box → `gift-boxes`
   - Handmade Butterfly Beaded Bracelet → `bracelets`. You can also swap its photo for `butterfly-bracelets.jpg`.
