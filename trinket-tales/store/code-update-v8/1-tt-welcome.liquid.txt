@@ -1,0 +1,122 @@
+{%- comment -%}
+  Trinket Tales – Welcome card, in the style of the Instagram welcome post.
+{%- endcomment -%}
+{%- liquid
+  assign tt_items = section.blocks
+  assign tt_half = tt_items.size | plus: 1 | divided_by: 2
+-%}
+<div class="tt-welcome{% assign tt_odd = tt_items.size | modulo: 2 %}{% if tt_odd == 1 %} tt-welcome--odd{% endif %} color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <div class="tt-welcome__card">
+      {%- if section.settings.note != blank -%}
+        <p class="tt-welcome__note">{{ section.settings.note | escape }}</p>
+      {%- endif -%}
+      <span class="tt-welcome__heart tt-welcome__heart--a" aria-hidden="true">♡</span>
+      <span class="tt-welcome__heart tt-welcome__heart--b" aria-hidden="true">♡</span>
+
+      <div class="tt-welcome__grid">
+        <ul class="tt-welcome__items tt-welcome__items--left" role="list">
+          {%- for block in tt_items limit: tt_half -%}
+            {% render 'tt-welcome-item', block: block %}
+          {%- endfor -%}
+        </ul>
+
+        <div class="tt-welcome__center">
+          {%- if section.settings.caption != blank -%}
+            <p class="tt-welcome__caption">{{ section.settings.caption | escape }}</p>
+          {%- endif -%}
+          <h2 class="tt-welcome__title">
+            {%- if section.settings.show_wordmark -%}
+              <img src="{{ 'tt-wordmark.png' | asset_url }}" alt="{{ shop.name | escape }}" width="640" height="420" loading="lazy">
+            {%- else -%}
+              {{ shop.name | escape }}
+            {%- endif -%}
+          </h2>
+          {%- if section.settings.tagline != blank -%}
+            <p class="tt-welcome__tagline">{{ section.settings.tagline | escape }}</p>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div class="tt-welcome__text rte">{{ section.settings.text }}</div>
+          {%- endif -%}
+          {%- if section.settings.signoff != blank -%}
+            <p class="tt-welcome__signoff">{{ section.settings.signoff | escape }}</p>
+          {%- endif -%}
+          {%- if section.settings.thanks != blank -%}
+            <p class="tt-welcome__thanks">{{ section.settings.thanks | escape }}</p>
+          {%- endif -%}
+          {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+            <a href="{{ section.settings.button_link }}" class="button button--primary tt-welcome__button">{{ section.settings.button_label | escape }}</a>
+          {%- endif -%}
+        </div>
+
+        <ul class="tt-welcome__items tt-welcome__items--right" role="list">
+          {%- for block in tt_items offset: tt_half -%}
+            {% render 'tt-welcome-item', block: block %}
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      {%- if section.settings.stamp != blank -%}
+        <p class="tt-welcome__stamp">{{ section.settings.stamp | escape }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Welcome card",
+  "tag": "section",
+  "class": "section tt-section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "note", "label": "Sticky note", "default": "Small business, big dreams ♡" },
+    { "type": "text", "id": "caption", "label": "Small heading", "default": "Welcome to" },
+    { "type": "checkbox", "id": "show_wordmark", "label": "Show the Trinket Tales wordmark", "default": true },
+    { "type": "text", "id": "tagline", "label": "Tagline", "default": "Handmade · Customized · Gifts" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>A small little dream turned into my own small business ♡</p><p>Here you'll find cute handmade gifts, snack boxes, bracelets, phone charms, keychains, customized bangles and little makeup and jewellery deals.</p>" },
+    { "type": "text", "id": "signoff", "label": "Sign-off line", "default": "Made with love and packed with care ♡" },
+    { "type": "text", "id": "thanks", "label": "Thank-you line", "default": "Thank you for being a part of my journey ♡" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop all" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "text", "id": "stamp", "label": "Corner note", "default": "Support small business" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "t:sections.all.colors.label", "default": "scheme-1" }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "select", "id": "icon", "label": "Icon", "default": "gift",
+          "options": [
+            { "value": "gift", "label": "Gift box" },
+            { "value": "bracelet", "label": "Bracelet" },
+            { "value": "charm", "label": "Phone charm" },
+            { "value": "keychain", "label": "Keychain" },
+            { "value": "bangles", "label": "Bangles" },
+            { "value": "makeup", "label": "Makeup" },
+            { "value": "jewellery", "label": "Jewellery" }
+          ]
+        },
+        { "type": "text", "id": "label", "label": "Label", "default": "Gift boxes" },
+        { "type": "url", "id": "link", "label": "Link (optional)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Welcome card",
+      "blocks": [
+        { "type": "item", "settings": { "icon": "gift", "label": "Snack boxes" } },
+        { "type": "item", "settings": { "icon": "bracelet", "label": "Bracelets" } },
+        { "type": "item", "settings": { "icon": "charm", "label": "Phone charms" } },
+        { "type": "item", "settings": { "icon": "keychain", "label": "Keychains" } },
+        { "type": "item", "settings": { "icon": "bangles", "label": "Customized bangles" } },
+        { "type": "item", "settings": { "icon": "makeup", "label": "Makeup deals" } },
+        { "type": "item", "settings": { "icon": "jewellery", "label": "Jewellery deals" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

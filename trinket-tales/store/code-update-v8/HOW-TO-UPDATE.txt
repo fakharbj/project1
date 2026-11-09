@@ -1,0 +1,29 @@
+TRINKET TALES – UPDATE YOUR LIVE THEME WITHOUT LOSING ANYTHING (v8)
+
+You keep your logo, banner and every setting. Nothing is uploaded over your theme.
+Open admin.shopify.com in Chrome with "Desktop site" ticked.
+
+Online Store > Themes > your live theme > ... (three dots) > Edit code
+
+1. Sections > "Add a new section" > name: tt-welcome > Done.
+   Delete everything in the new file, paste all of 1-tt-welcome.liquid.txt, then Save.
+
+2. Snippets > "Add a new snippet" > name: tt-welcome-item > Done.
+   Delete everything, paste all of 2-tt-welcome-item.liquid.txt, then Save.
+
+3. Sections > open tt-gallery.liquid.
+   Select all, delete, paste all of 3-tt-gallery.liquid.txt, then Save.
+
+4. Assets > open trinket-tales.css.
+   Go to the VERY END of the file, press Enter twice, paste all of
+   4-add-to-end-of-trinket-tales-css.txt, then Save.
+
+5. Assets > "Add a new asset" > Upload > 5-tt-wordmark.png.
+   It must be named exactly tt-wordmark.png.
+
+Then Customize (the home page):
+6. "Add section" > "Welcome card". Drag it to where "Brand story" was.
+7. On "Brand story", click the eye icon to hide it, or delete it.
+8. Click "Photo gallery": clear the Collection field (it then uses all products).
+   Set "Photos to show" to "Main photo of each product".
+9. Save.
