@@ -1,6 +1,6 @@
 # Trinket Tales – connected e-commerce project
 
-One product carried through all four assignments: **Mini Makeup Kit for Girls (gift pouch)**, sold on a Shopify store.
+One product carried through all four assignments: **Lollipop Makeup Kit for Girls (washable gift box)**, dropshipped from AliExpress through DSers and sold on a Shopify store, with Instagram @trinket_tales_1 bringing buyers to it.
 
 | Part | File |
 |---|---|
@@ -16,16 +16,16 @@ Each part comes as `.docx` (editable) and `.pdf`.
 **Before submitting:** fill in Roll No. and Course in the `.docx` files (store and product links are already filled in), then save as PDF.
 
 ## Store kit
-- `store/STORE-SETUP.md` – step-by-step setup on a phone: product import, theme, pages, policies, COD, delivery rates, Markaz / DSers dropshipping, Instagram.
-- `store/Trinket-Tales-Theme.zip` – ready-to-upload custom theme v3 (official Dawn 16.1.1 + full-width banner with desktop/mobile images, trust bar, colour cards, logo-based details, custom About/FAQ/Contact pages, mobile sticky Add to cart, delivery date, free-delivery progress, equal 4:5 images, short mobile pages). Upload after importing the product.
-- `store/STORE-SETUP.pdf` – the same guide as a phone-friendly PDF: setup steps, banner sizes + ChatGPT prompts, dropshipping accounts and what to paste.
-- `store/product-import.csv` – Shopify product import (5 colours, prices, SKUs, SEO). Store currency must be PKR.
+- `store/FINAL-CHECKLIST.md` / `.pdf` – every step to production, final links, and text to paste (policies, About).
+- `store/Trinket-Tales-Theme.zip` – theme v4 (official Dawn 16.1.1 + brand design). Delivery dates switch automatically: products tagged `dropship` show 10–20 working days, everything else 3–5.
+- `store/product-import.csv` – import file for the bear-bag pouch (own Instagram stock, not dropshipped). Store currency must be PKR.
 - `store/photos/` – 6 listing photos, all cropped to 4:5.
 - `store/brand/` – logo (round PNG, transparent), square logo, favicon.
 
 ## The project in one line each
-- **Niche:** mini makeup gift pouches for girls aged about 8–14, bought as birthday / Eid / return gifts.
-- **Main keyword:** mini makeup kit for girls.
-- **Price:** Rs 1,200 (compare-at Rs 1,500), cash on delivery.
-- **Supplier:** Markaz (Pakistan, COD); DSers + AliExpress as backup with automatic order sync.
-- **Competitors:** Daraz, Markaz resellers, OLX, Instagram gift pages; case study MINISO.
+- **Niche:** washable kids' makeup gift kits for girls aged about 6–12, bought as birthday, Eid and return gifts.
+- **Main keyword:** kids makeup kit for girls.
+- **Price:** Rs 3,499 (compare-at Rs 4,499), advance payment for this imported item.
+- **Supplier:** AliExpress through DSers (main), a backup AliExpress seller, and local stock later.
+- **Rest of the store:** own Instagram range (pouch, bracelets, gift bundles) sold from own stock with cash on delivery.
+- **Competitors:** Daraz, toy stores, Markaz resellers, OLX, Instagram gift pages; case study MINISO.
