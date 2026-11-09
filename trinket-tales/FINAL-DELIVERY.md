@@ -33,7 +33,7 @@ All files are in the `assignments` folder.
 
 ## 4. Last checks on the store (on your phone)
 
-I couldn't open the live store from my side, so please check these yourself:
+The full fix list from the store review, with texts to paste, is in `store/STORE-FIXES.pdf`. Quick checks:
 
 - [ ] No `%}` text anywhere on the home page. See the fix in the chat: delete the extra `%}` at the end of 3 files.
 - [ ] Welcome card: the small heading says "Welcome to", and the items you want are there.
