@@ -1,12 +1,14 @@
-# Trinket Tales: final production checklist (v5)
+# Trinket Tales: final production checklist (v6)
 
 Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a phone. It takes about 45 minutes. If a step is already done, tick it and move on.
 
-**What's already built into theme v5** (no work needed):
+**What's already built into theme v6** (no work needed):
 - Home page sections: banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, Instagram-style photo gallery, quick answers.
 - About, FAQ and Contact content.
 - Delivery dates that switch on the `dropship` tag.
 - Free-delivery bar, sticky Add to cart, equal 4:5 photos.
+- Left-aligned layout and a hero that shows your banner image whole.
+- WhatsApp chat button, plus an "Ask us on WhatsApp" line on product pages.
 
 **Tags drive everything.** Give products the right tags, and the collections, home tiles and delivery dates fill themselves.
 
@@ -51,14 +53,17 @@ Products → Collections → **Create collection** → **Automated** → conditi
 
 The home page category tiles find these collections by their titles and show their first product photo by themselves.
 
-## 3. Theme v5 (5 min)
+## 3. Theme v6 (5 min)
 
-- [ ] Online Store → Themes → **Add theme → Upload zip file** → `trinket-tales-theme-v5-UPLOAD.zip`. Don't unzip it first.
+- [ ] Online Store → Themes → **Add theme → Upload zip file** → `trinket-tales-theme-v6-UPLOAD.zip`. Don't unzip it first.
 - [ ] **Customize** → Theme settings (paintbrush):
   - **Logo** → `trinket-tales-logo-round.png`
   - **Favicon** → `trinket-tales-favicon-512.png`
   - **Save**
-- [ ] Optional, your ChatGPT banner: click **Banner** → **Desktop image** and **Mobile image** → Save.
+- [ ] **Banner:** click **Banner** → **Desktop image** → `banner-desktop-chatgpt.jpg` → Save.
+  - A mobile image is optional. Without one, phones show the desktop image whole, with the text underneath.
+- [ ] **WhatsApp:** Theme settings → **Trinket Tales** → **WhatsApp number**, in the form `923001234567` → Save. The chat button and the product-page line only appear once a number is set.
+- [ ] **Main kit photo:** in Shopify, make the cleanest AliExpress photo the **first** image. Avoid photos with printed text or children's faces, which look less premium.
 - [ ] **⋯ → Publish**. Remove old theme copies.
 
 ## 4. Pages, policies, menus (8 min)
