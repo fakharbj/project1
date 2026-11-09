@@ -1,8 +1,8 @@
-# Trinket Tales: final production checklist (v6)
+# Trinket Tales: final production checklist (v7)
 
 Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a phone. It takes about 45 minutes. If a step is already done, tick it and move on.
 
-**What's already built into theme v6** (no work needed):
+**What's already built into theme v7** (no work needed):
 - Home page sections: banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, Instagram-style photo gallery, quick answers.
 - About, FAQ and Contact content.
 - Delivery dates that switch on the `dropship` tag.
@@ -35,11 +35,27 @@ Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a p
   - Mini makeup pouch → `kids-makeup, gift-boxes`
   - Aesthetic Self-Care Gift Box and Customize box → `gift-boxes`
   - Handmade Butterfly Beaded Bracelet → `bracelets`. You can also swap its photo for `butterfly-bracelets.jpg`.
-- [ ] **Main DSers product** (the one used in the assignments):
-  - Title `Lollipop Makeup Kit for Girls - Washable Gift Box`, or tell me its real name.
-  - Price **Rs 3,499**, compare-at **Rs 4,499**.
-  - Description from Assignment 3, section 2.
-  - Search engine listing → URL handle **`lollipop-makeup-kit-for-girls`**. The home page shows it by this handle.
+- [ ] **Main product: Dreamy Kids Makeup Set** (the one in the assignments). Open it in Products:
+  - **Title:** `Dreamy Kids Makeup Set for Girls`
+  - **Options:** rename the option **Color** to **Pack**, and the values to `1 Kit`, `2 Kits`, `3 Kits`, `4 Kits`.
+  - **Prices:**
+
+    | Pack | Price | Compare-at |
+    |---|---|---|
+    | 1 Kit | 2999 | 3999 |
+    | 2 Kits | 5699 | 7999 |
+    | 3 Kits | 8299 | 11999 |
+    | 4 Kits | 10799 | 15999 |
+
+  - **Description:** delete the supplier's SPECIFICATIONS text and paste the description from **Assignment 3, section 2**.
+  - **Images:** drag the cleanest photo to **first** place, ideally one without printed text or children's faces.
+  - **Search engine listing:** URL handle **`dreamy-kids-makeup-set-for-girls`**, plus the page title and meta description from Assignment 3, section 4.
+  - **Tags:** `kids-makeup, dropship`
+  - **Save**.
+- [ ] **Prices without decimals:** Settings → General → Store defaults → **Currency display → Change formatting**:
+  - HTML without currency: `Rs {{amount_no_decimals}}`
+  - HTML with currency: `Rs {{amount_no_decimals}} PKR`
+  - Save. Prices then show **Rs 2,999** instead of Rs.1,687.70.
 
 ## 2. Collections (3 min, done once)
 
@@ -53,11 +69,11 @@ Products → Collections → **Create collection** → **Automated** → conditi
 
 The home page category tiles find these collections by their titles and show their first product photo by themselves.
 
-## 3. Theme v6 (5 min)
+## 3. Theme v7 (5 min)
 
-- [ ] Online Store → Themes → **Add theme → Upload zip file** → `trinket-tales-theme-v6-UPLOAD.zip`. Don't unzip it first.
+- [ ] Online Store → Themes → **Add theme → Upload zip file** → `trinket-tales-theme-v7-UPLOAD.zip`. Don't unzip it first.
 - [ ] **Customize** → Theme settings (paintbrush):
-  - **Logo** → `trinket-tales-logo-round.png`
+  - **Logo** → `trinket-tales-wordmark.png` (the clean header wordmark)
   - **Favicon** → `trinket-tales-favicon-512.png`
   - **Save**
 - [ ] **Banner:** click **Banner** → **Desktop image** → `banner-desktop-chatgpt.jpg` → Save.
@@ -102,8 +118,8 @@ Imported (`dropship`) items need advance payment, because the parcel comes strai
 ## 6. Go live (5 min)
 
 - [ ] Phone test:
-  - Home: banner, categories (3 tiles with photos), the kit, New & loved grid, gallery.
-  - The kit page says **10–20 working days**.
+  - Home: banner, categories (3 tiles with photos), the makeup set, New & loved grid, gallery.
+  - The makeup set page says **10–20 working days**.
   - A bracelet page says **3–5**.
   - Checkout shows COD and Advance payment.
 - [ ] **Online Store → Preferences:** copy the store password, or pick a plan to remove it.
@@ -121,7 +137,7 @@ Imported (`dropship`) items need advance payment, because the parcel comes strai
 | What | Link |
 |---|---|
 | Store | https://wmyj10-ju.myshopify.com |
-| Main product | https://wmyj10-ju.myshopify.com/products/lollipop-makeup-kit-for-girls |
+| Main product | https://wmyj10-ju.myshopify.com/products/dreamy-kids-makeup-set-for-girls |
 | Supplier you imported | https://www.aliexpress.com/item/1005012993298696.html |
 | Collections | /collections/kids-makeup-gifts · /collections/handmade-bracelets · /collections/gift-boxes-and-bundles |
 | Instagram | https://www.instagram.com/trinket_tales_1 |

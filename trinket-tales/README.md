@@ -1,6 +1,6 @@
 # Trinket Tales – connected e-commerce project
 
-One product carried through all four assignments: **Lollipop Makeup Kit for Girls (washable gift box)**, dropshipped from AliExpress through DSers and sold on a Shopify store, with Instagram @trinket_tales_1 bringing buyers to it.
+One product carried through all four assignments: **Dreamy Kids Makeup Set for Girls (gift set, packs of 1–4 kits)**, dropshipped from AliExpress through DSers and sold on a Shopify store, with Instagram @trinket_tales_1 bringing buyers to it.
 
 | Part | File |
 |---|---|
@@ -17,17 +17,17 @@ Each part comes as `.docx` (editable) and `.pdf`.
 
 ## Store kit
 - `store/FINAL-CHECKLIST.md` / `.pdf` – every step to production, final links, and text to paste (policies, About).
-- `store/Trinket-Tales-Theme.zip` – theme v6 (official Dawn 16.1.1 + brand design): left-aligned layout, hero that fits the image, WhatsApp chat, banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, photo gallery, quick answers. Delivery dates switch on the `dropship` tag.
+- `store/Trinket-Tales-Theme.zip` – theme v7 (official Dawn 16.1.1 + brand design): calm product pages, left-aligned layout, hero that fits the image, WhatsApp chat, banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, photo gallery, quick answers. Delivery dates switch on the `dropship` tag.
 - `store/instagram-products/` – import file for the Instagram products (Flower Bead Bracelet Set, Pearl Bracelet with Jade Bead) plus cleaned product photos.
 - `store/brand/banner-desktop-chatgpt.jpg` – desktop hero banner, cropped for the banner section.
 - `store/product-import.csv` – import file for the bear-bag pouch (own Instagram stock, not dropshipped). Store currency must be PKR.
 - `store/photos/` – 6 listing photos, all cropped to 4:5.
-- `store/brand/` – logo (round PNG, transparent), square logo, favicon.
+- `store/brand/` – header wordmark (transparent PNG), round logo, square logo, favicon, desktop banner.
 
 ## The project in one line each
 - **Niche:** washable kids' makeup gift kits for girls aged about 6–12, bought as birthday, Eid and return gifts.
 - **Main keyword:** kids makeup kit for girls.
-- **Price:** Rs 3,499 (compare-at Rs 4,499), advance payment for this imported item.
+- **Price:** Rs 2,999 for one kit (compare-at Rs 3,999), advance payment for this imported item.
 - **Supplier:** AliExpress through DSers (main), a backup AliExpress seller, and local stock later.
 - **Rest of the store:** own Instagram range (pouch, bracelets, gift bundles) sold from own stock with cash on delivery.
 - **Competitors:** Daraz, toy stores, Markaz resellers, OLX, Instagram gift pages; case study MINISO.
