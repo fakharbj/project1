@@ -27,3 +27,10 @@ Then Customize (the home page):
 8. Click "Photo gallery": clear the Collection field (it then uses all products).
    Set "Photos to show" to "Main photo of each product".
 9. Save.
+
+IF YOU SEE STRAY "%}" TEXT ON THE PAGE
+A few characters were left over when pasting. Open the file and delete anything
+after its last real line:
+  - tt-welcome-item.liquid must end with:  </li>
+  - tt-welcome.liquid and tt-gallery.liquid must end with:  {% endschema %}
+Tip: copy with the Copy button on the code box, not by long-press selecting.

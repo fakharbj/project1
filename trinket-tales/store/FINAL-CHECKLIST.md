@@ -1,9 +1,9 @@
-# Trinket Tales: final production checklist (v7)
+# Trinket Tales: final production checklist (v8)
 
-Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a phone. It takes about 45 minutes. If a step is already done, tick it and move on.
+Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a phone. This is the full list. If a step is already done, tick it and move on. `STORE-FIXES.pdf` lists only what was still missing when I reviewed the store on 9 November, and it has the texts to paste (Text A to E).
 
-**What's already built into theme v7** (no work needed):
-- Home page sections: banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, Instagram-style photo gallery, quick answers.
+**What's already built into theme v8** (no work needed):
+- Home page sections: banner, trust bar, shop-by-category tiles, featured product, product grid, Instagram-style welcome card, photo gallery, quick answers.
 - About, FAQ and Contact content.
 - Delivery dates that switch on the `dropship` tag.
 - Free-delivery bar, sticky Add to cart, equal 4:5 photos.
@@ -21,25 +21,26 @@ Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a p
 
 ---
 
-## 1. Products (15 min)
+## 1. Products (20 min)
 
 - [ ] **Instagram products, one import:** Products → **Import** → `instagram-products-import.csv` → Import.
   - This adds **Flower Bead Bracelet Set (3 Pieces)** in Pink Bow, Purple Bow, Sunshine Yellow and Cherry Red, at Rs 650.
   - It also adds **Pearl Bracelet with Jade Bead** in Light, Sage and Deep Jade, at Rs 450.
   - Both are tagged `bracelets` and `handmade`. **Change the prices if yours are different.**
+  - **Stock:** the import doesn't carry stock over, so both show "Sold out". Go to Products → **Inventory** and type `10` next to each colour, then Save.
 - [ ] **Add photos to the two new products** (from the `instagram-products` folder):
   - Bracelet set: `bracelet-set-pink/purple/yellow/red.jpg`. Under Variants, link each colour to its photo.
   - Pearl bracelet: `pearl-jade-bracelet.jpg`.
 - [ ] **Tag the products you already have:** Products → tick the products → **More actions → Add tags**:
   - Dreamy Kids Makeup Set (from DSers) → `kids-makeup, dropship`
   - Flower bead bracelet set (from DSers) → `bracelets, dropship`
-  - Mini makeup pouch → `kids-makeup, gift-boxes`
+  - Mini makeup pouch → `kids-makeup, gift-boxes`. Add its photo from the `photos` folder.
   - Aesthetic Self-Care Gift Box and Customize box → `gift-boxes`
-  - Handmade Butterfly Beaded Bracelet → `bracelets`. You can also swap its photo for `butterfly-bracelets.jpg`.
+  - Handmade Butterfly Beaded Bracelet → `bracelets`
 - [ ] **Main product: Dreamy Kids Makeup Set** (the one in the assignments). Open it in Products:
   - **Title:** `Dreamy Kids Makeup Set for Girls`
-  - **Options:** rename the option **Color** to **Pack**, and the values to `1 Kit`, `2 Kits`, `3 Kits`, `4 Kits`.
-  - **Prices:**
+  - **Option:** rename **Color** to **Pack**, and the values to `1 Kit`, `2 Kits`, `3 Kits`, `4 Kits`. Drag **1 Kit** to the top.
+  - **Prices:** DSers brings in the supplier's cost (Rs 1,687.70), so change them to these:
 
     | Pack | Price | Compare-at |
     |---|---|---|
@@ -48,11 +49,20 @@ Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a p
     | 3 Kits | 8299 | 11999 |
     | 4 Kits | 10799 | 15999 |
 
-  - **Description:** delete the supplier's SPECIFICATIONS text and paste the description from **Assignment 3, section 2**.
-  - **Images:** drag the cleanest photo to **first** place, ideally one without printed text or children's faces.
-  - **Search engine listing:** URL handle **`dreamy-kids-makeup-set-for-girls`**, plus the page title and meta description from Assignment 3, section 4.
+  - **Description:** delete the supplier's text and paste **Text A** from STORE-FIXES.
+  - **Images:** drag the cleanest photo to **first** place and delete the near-duplicates. Keep 6 to 8.
+  - **Search engine listing:**
+    - URL handle: **`dreamy-kids-makeup-set-for-girls`**. Leave "Create a URL redirect" ticked.
+    - Page title and meta description: from Assignment 3, section 4.
   - **Tags:** `kids-makeup, dropship`
   - **Save**.
+- [ ] **Second DSers product: flower bead bracelet set.**
+  - Title: `Boho Daisy Flower Bead Bracelet Set`.
+  - Price: `1199`, compare-at `1499`.
+  - Option **Metal Color** → `Colour`.
+  - Description: **Text B**.
+  - Tags: `bracelets, dropship`.
+  - Save.
 - [ ] **Prices without decimals:** Settings → General → Store defaults → **Currency display → Change formatting**:
   - HTML without currency: `Rs {{amount_no_decimals}}`
   - HTML with currency: `Rs {{amount_no_decimals}} PKR`
@@ -68,20 +78,26 @@ Products → Collections → **Create collection** → **Automated** → conditi
 | `Handmade Bracelets` | `bracelets` |
 | `Gift Boxes and Bundles` | `gift-boxes` |
 
-The home page category tiles find these collections by their titles and show their first product photo by themselves.
+The home page category tiles show these collections and their first product photo by themselves.
 
-## 3. Theme v7 (5 min)
+## 3. Theme (already installed, don't upload it again)
 
-- [ ] Online Store → Themes → **Add theme → Upload zip file** → `trinket-tales-theme-v7-UPLOAD.zip`. Don't unzip it first.
+- [ ] If the Welcome card isn't on your home page yet, apply the v8 update from `code-update-v8/HOW-TO-UPDATE.txt`. It only adds files, so your settings stay.
 - [ ] **Customize** → Theme settings (paintbrush):
-  - **Logo** → `trinket-tales-wordmark.png` (the clean header wordmark)
+  - **Logo** → `trinket-tales-wordmark.png`
   - **Favicon** → `trinket-tales-favicon-512.png`
+  - **Trinket Tales → WhatsApp number**, in the form `923001234567`. The chat button and the product-page line only appear once a number is set.
   - **Save**
-- [ ] **Banner:** click **Banner** → **Desktop image** → `banner-desktop-chatgpt.jpg` → Save.
-  - A mobile image is optional. Without one, phones show the desktop image whole, with the text underneath.
-- [ ] **WhatsApp:** Theme settings → **Trinket Tales** → **WhatsApp number**, in the form `923001234567` → Save. The chat button and the product-page line only appear once a number is set.
-- [ ] **Main kit photo:** in Shopify, make the cleanest AliExpress photo the **first** image. Avoid photos with printed text or children's faces, which look less premium.
-- [ ] **⋯ → Publish**. Remove old theme copies.
+- [ ] **Banner:** set a **Desktop image** only and leave **Mobile image** empty. Phones then show the photo whole with the text underneath.
+- [ ] **Featured product** ("Our favourite gift") → Product → **Dreamy Kids Makeup Set**.
+- [ ] **Brand story** → hide it with the eye icon. The Welcome card tells the same story.
+- [ ] **Payment wording.** The theme ZIP already has the right texts, but on your live theme change them by hand:
+  - Quick answers → "How do I pay?" → **Text C**.
+  - Products → Default product:
+    - Icon row → `Cash on delivery` becomes `Easy payment`.
+    - Delivery and payment tab → **Text D**.
+  - Footer text block → **Text E**.
+- [ ] **Save**.
 
 ## 4. Pages, policies, menus (8 min)
 
@@ -95,9 +111,9 @@ The home page category tiles find these collections by their titles and show the
 
 - [ ] **Settings → Policies:**
   - **Shipping** and **Refund**: paste the texts below.
-  - **Privacy** and **Terms**: *Create from template*.
+  - **Terms**: *Create from template*. Privacy is already there.
   - **Save**.
-- [ ] **Navigation → Main menu:** Home · Kids Makeup Gifts · Handmade Bracelets · Gift Boxes and Bundles · About Us · FAQ · Contact
+- [ ] **Navigation → Main menu:** Home · Shop · About · FAQ · Contact.
 - [ ] **Footer menu:** FAQ · Contact · Shipping Policy · Refund Policy · Privacy Policy
 
 ## 5. Payments and delivery (8 min)
@@ -119,16 +135,17 @@ Imported (`dropship`) items need advance payment, because the parcel comes strai
 ## 6. Go live (5 min)
 
 - [ ] Phone test:
-  - Home: banner, categories (3 tiles with photos), the makeup set, New & loved grid, gallery.
-  - The makeup set page says **10–20 working days**.
-  - A bracelet page says **3–5**.
+  - Home: the banner text sits under the photo, there are 3 category tiles with photos, the makeup set is the featured product, and you see the New & loved grid, the Welcome card and the gallery.
+  - The makeup set page says **Rs 2,999**, **10–20 working days** and **Easy payment**.
+  - A bracelet from your own stock says **3–5** days.
+  - The footer lists Shipping, Refund, Privacy and Terms.
   - Checkout shows COD and Advance payment.
+- [ ] **Test order #1002:**
+  - Don't place it in DSers.
+  - Cancel it in Shopify: Orders → #1002 → More actions → Cancel order.
 - [ ] **Online Store → Preferences:** copy the store password, or pick a plan to remove it.
 - [ ] Instagram bio link → `https://wmyj10-ju.myshopify.com`
-- [ ] Assignments:
-  - Fill in Roll No. and Course.
-  - Paste a screenshot of the live kit page (Assignment 3) and of DSers My Products (Assignment 2).
-  - Save as PDF and submit.
+- [ ] Assignments: see `FINAL-DELIVERY.pdf` for Roll No., Course and the two screenshots.
 - [ ] After marks: change the password and turn on 2-step verification.
 
 ---
@@ -138,8 +155,9 @@ Imported (`dropship`) items need advance payment, because the parcel comes strai
 | What | Link |
 |---|---|
 | Store | https://wmyj10-ju.myshopify.com |
-| Main product | https://wmyj10-ju.myshopify.com/products/dreamy-kids-makeup-set-for-girls |
-| Supplier you imported | https://www.aliexpress.com/item/1005012993298696.html |
+| Main product | https://wmyj10-ju.myshopify.com/products/dreamy-kids-makeup-set-for-girls (works once the URL handle is changed) |
+| Supplier, makeup set (main) | https://www.aliexpress.com/item/1005012993298696.html |
+| Supplier, flower bead bracelet set | https://www.aliexpress.com/item/1005011994527815.html |
 | Collections | /collections/kids-makeup-gifts · /collections/handmade-bracelets · /collections/gift-boxes-and-bundles |
 | Instagram | https://www.instagram.com/trinket_tales_1 |
 
@@ -147,12 +165,14 @@ Imported (`dropship`) items need advance payment, because the parcel comes strai
 
 ## Text to paste
 
+Texts A to E (product descriptions, FAQ, delivery tab, footer) are at the end of `STORE-FIXES.pdf`.
+
 ### Shipping Policy
 We deliver all over Pakistan.
 
 **Items from our own stock** (bracelets, gift bundles, little gift boxes) are dispatched within 1 to 2 working days and usually arrive in 3 to 5 working days. Cash on delivery is available.
 
-**Imported gift boxes** (shown on the product page) ship from our supplier and usually arrive in 10 to 20 working days. They need advance payment by bank transfer, JazzCash or Easypaisa, and we share a tracking number once the parcel ships.
+**Imported items** (marked on the product page) ship from our supplier and usually arrive in 10 to 20 working days. They need advance payment by bank transfer, JazzCash or Easypaisa, and we share a tracking number once the parcel ships.
 
 Delivery is Rs 200, and free on orders over Rs 2,500.
 
