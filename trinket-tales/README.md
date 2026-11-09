@@ -1,6 +1,6 @@
 # Trinket Tales – connected e-commerce project
 
-One product carried through all four assignments: **Mini Makeup Kit for Girls (gift pouch)**, sold on Shopify with Instagram @trinket_tales_1.
+One product carried through all four assignments: **Mini Makeup Kit for Girls (gift pouch)**, sold on a Shopify store.
 
 | Part | File |
 |---|---|
@@ -13,7 +13,7 @@ One product carried through all four assignments: **Mini Makeup Kit for Girls (g
 
 Each part comes as `.docx` (editable) and `.pdf`.
 
-**Before submitting:** fill in Roll No., Course and the Store / Product link lines in the `.docx` files, then save as PDF.
+**Before submitting:** fill in Roll No. and Course in the `.docx` files (store and product links are already filled in), then save as PDF.
 
 ## Store kit
 - `store/STORE-SETUP.md` – step-by-step setup on a phone: product import, theme, pages, policies, COD, delivery rates, Markaz / DSers dropshipping, Instagram.
