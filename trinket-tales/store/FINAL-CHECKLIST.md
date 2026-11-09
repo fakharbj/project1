@@ -1,122 +1,113 @@
-# Trinket Tales: final production checklist (v4)
+# Trinket Tales: final production checklist (v5)
 
-Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a phone. It takes about 60 minutes. If a step is already done, tick it and move on.
+Open **admin.shopify.com** in Chrome and turn on "Desktop site" if you're on a phone. It takes about 45 minutes. If a step is already done, tick it and move on.
 
-**What sells where**
+**What's already built into theme v5** (no work needed):
+- Home page sections: banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, Instagram-style photo gallery, quick answers.
+- About, FAQ and Contact content.
+- Delivery dates that switch on the `dropship` tag.
+- Free-delivery bar, sticky Add to cart, equal 4:5 photos.
 
-| Product | How it's fulfilled | Payment | Delivery |
-|---|---|---|---|
-| **Lollipop Makeup Kit** (the assignment product) | Dropshipped from AliExpress via DSers. Tag: `dropship` | Advance (bank / JazzCash / Easypaisa) | 10–20 working days |
-| Extra AliExpress items (optional bracelets) | Dropshipped via DSers. Tag: `dropship` | Advance | 10–20 working days |
-| **Your Instagram products**: bear-bag pouch, bracelets, gift bundles, gift boxes | Your own stock, **no DSers** | Cash on delivery | 3–5 working days |
+**Tags drive everything.** Give products the right tags, and the collections, home tiles and delivery dates fill themselves.
 
-The theme reads the `dropship` tag. Those products automatically show 10–20 days on the product page, and everything else shows 3–5 days.
+| Tag | What it does |
+|---|---|
+| `kids-makeup` | goes into **Kids Makeup Gifts** |
+| `bracelets` | goes into **Handmade Bracelets** |
+| `gift-boxes` | goes into **Gift Boxes and Bundles** |
+| `dropship` | product page shows **10–20 working days** (imported). Without it: 3–5 days |
 
 ---
 
-## 1. Import the main product with DSers (10 min)
+## 1. Products (15 min)
 
-- [ ] Shopify → Apps → **DSers** → **Import List** → paste `https://www.aliexpress.com/item/4000781891981.html` → **Import**.
-  - If that seller is unavailable, use the backup: `https://www.aliexpress.com/item/4000811549459.html`
-- [ ] Before pushing, open the product's **Shipping** in DSers and note the cost to **Pakistan**. You need it for the price in step 2.
-- [ ] Edit in DSers:
-  - **Title:** `Lollipop Makeup Kit for Girls - Washable Gift Box`
-  - **Tags:** add `dropship`
-  - **Push to Shopify**
-- [ ] If you mapped the **bear-bag pouch** to AliExpress earlier: DSers → My Products → pouch → Mapping → remove the supplier. The pouch is your own stock now.
+- [ ] **Instagram products, one import:** Products → **Import** → `instagram-products-import.csv` → Import.
+  - This adds **Flower Bead Bracelet Set (3 Pieces)** in Pink Bow, Purple Bow, Sunshine Yellow and Cherry Red, at Rs 650.
+  - It also adds **Pearl Bracelet with Jade Bead** in Light, Sage and Deep Jade, at Rs 450.
+  - Both are tagged `bracelets` and `handmade`. **Change the prices if yours are different.**
+- [ ] **Add photos to the two new products** (from the `instagram-products` folder):
+  - Bracelet set: `bracelet-set-pink/purple/yellow/red.jpg`. Under Variants, link each colour to its photo.
+  - Pearl bracelet: `pearl-jade-bracelet.jpg`.
+- [ ] **Tag the products you already have:** Products → tick the products → **More actions → Add tags**:
+  - The 2 DSers products → `kids-makeup, dropship`
+  - Mini makeup pouch → `kids-makeup, gift-boxes`
+  - Aesthetic Self-Care Gift Box and Customize box → `gift-boxes`
+  - Handmade Butterfly Beaded Bracelet → `bracelets`. You can also swap its photo for `butterfly-bracelets.jpg`.
+- [ ] **Main DSers product** (the one used in the assignments):
+  - Title `Lollipop Makeup Kit for Girls - Washable Gift Box`, or tell me its real name.
+  - Price **Rs 3,499**, compare-at **Rs 4,499**.
+  - Description from Assignment 3, section 2.
+  - Search engine listing → URL handle **`lollipop-makeup-kit-for-girls`**. The home page shows it by this handle.
 
-## 2. Finish the product in Shopify (10 min)
+## 2. Collections (3 min, done once)
 
-Open Products → *Lollipop Makeup Kit for Girls*:
-- [ ] **Price** Rs **3,499**, **Compare-at** Rs **4,499**, on every option.
-  - If DSers showed shipping of around US$10 or more, read the decision in Assignment 2, section 6, before going live.
-- [ ] **Description:** delete the supplier text and paste the description from **Assignment 3, section 2**.
-- [ ] **Search engine listing → Edit:**
-  - Page title: `Lollipop Makeup Kit for Girls | Washable Gift Box | Trinket Tales`
-  - Meta description: `Cute washable makeup kit for girls in a lollipop-shaped gift box. Lip colours, eyeshadow, blush and nail polish. Delivered across Pakistan.`
-  - URL handle: **`lollipop-makeup-kit-for-girls`** (exactly this, because the home page uses it)
-- [ ] **Tags:** `kids makeup kit for girls, washable makeup kit for kids, lollipop makeup kit, makeup gift set for girls, birthday gift for girls, eid gift for girls, dropship`
-- [ ] **Collections:** create *Kids Makeup Gifts* and add the kit.
-- [ ] **Status** = Active → **Save**.
+Products → Collections → **Create collection** → **Automated** → condition **Product tag is equal to**:
 
-**Optional extra AliExpress products** (same way: Import List → tag `dropship` → Push → set price):
-- Butterfly charm bracelet: `https://www.aliexpress.com/item/1005006413334032.html`
-- Flower bead bracelet set: `https://www.aliexpress.com/item/1005011994527815.html`
-- Pearl crystal bracelet: `https://www.aliexpress.com/item/1005004840626196.html`
+| Title (type it exactly) | Tag |
+|---|---|
+| `Kids Makeup Gifts` | `kids-makeup` |
+| `Handmade Bracelets` | `bracelets` |
+| `Gift Boxes and Bundles` | `gift-boxes` |
 
-Price rule: (supplier price + shipping in US$) × 280 × 1.4, rounded to …99. Example: (1 + 3) × 280 × 1.4 = 1,568 → **Rs 1,599**.
+The home page category tiles find these collections by their titles and show their first product photo by themselves.
 
-## 3. Your own Instagram products (5 min)
+## 3. Theme v5 (5 min)
 
-- [ ] Bear-bag pouch, bracelets, gift bundles, gift boxes: **Active**, **no `dropship` tag**, priced as on Instagram.
-- [ ] Add them to a collection called *Our Handmade & Gift Range*.
-
-## 4. Theme v4 (10 min)
-
-- [ ] Online Store → Themes → **Add theme → Upload zip file** → `trinket-tales-theme-v4-UPLOAD.zip`. Don't unzip it first.
+- [ ] Online Store → Themes → **Add theme → Upload zip file** → `trinket-tales-theme-v5-UPLOAD.zip`. Don't unzip it first.
 - [ ] **Customize** → Theme settings (paintbrush):
   - **Logo** → `trinket-tales-logo-round.png`
   - **Favicon** → `trinket-tales-favicon-512.png`
   - **Save**
-- [ ] Check the home page:
-  - Banner, then the **Lollipop kit** with Add to cart, then **More little joys** (all products).
-  - If the kit shows as "Your product's name", click the section → Product → pick the kit → **Save**.
-- [ ] Themes → new theme → **⋯ → Publish**. Old copies → **⋯ → Remove**.
+- [ ] Optional, your ChatGPT banner: click **Banner** → **Desktop image** and **Mobile image** → Save.
+- [ ] **⋯ → Publish**. Remove old theme copies.
 
-**Optional own banner photo:**
-- Click **Banner** → Desktop image (1920×800) and Mobile image (1080×1350).
-- ChatGPT prompt (attach a product photo saved from the product page):
-  > Edit the photo I attached into a website banner, landscape 3:2. Keep the product exactly as it is (same shape, colours and printing; don't redraw or add anything to it). Place it on the right, slightly tilted, with a soft shadow, on a clean cream (#FBF1E8) to blush pink (#F6E3DF) studio background with a pink satin bow, a few pearl beads and small rose (#C97B84) hearts. Leave the left 45% empty for text. Realistic photo, soft daylight, no text, no logos.
-  - For mobile, ask for portrait 2:3, with the product in the upper half and the bottom 40% left empty.
+## 4. Pages, policies, menus (8 min)
 
-## 5. Pages, policies, menus (10 min)
+- [ ] **Online Store → Pages.** Create each page **with no page text**, and set the **Theme template**:
 
-- [ ] **Online Store → Pages**, and set the **Theme template** on each:
-
-| Page | URL handle | Template | Page text |
-|---|---|---|---|
-| About Us | `about-us` | **about** | About text below |
-| FAQ | `faq` | **faq** | leave empty |
-| Contact | `contact` | **contact** | leave empty |
+| Page title | URL handle | Template |
+|---|---|---|
+| About Us | `about-us` | **about** |
+| FAQ | `faq` | **faq** |
+| Contact | `contact` | **contact** |
 
 - [ ] **Settings → Policies:**
   - **Shipping** and **Refund**: paste the texts below.
   - **Privacy** and **Terms**: *Create from template*.
   - **Save**.
-- [ ] **Navigation:**
-  - Main menu: Home · Kids Makeup Gifts · Our Handmade & Gift Range · About Us · FAQ · Contact
-  - Footer menu: FAQ · Contact · Shipping Policy · Refund Policy · Privacy Policy
+- [ ] **Navigation → Main menu:** Home · Kids Makeup Gifts · Handmade Bracelets · Gift Boxes and Bundles · About Us · FAQ · Contact
+- [ ] **Footer menu:** FAQ · Contact · Shipping Policy · Refund Policy · Privacy Policy
 
-## 6. Payments and delivery (10 min)
+## 5. Payments and delivery (8 min)
 
 - [ ] **Settings → Payments → Manual payment methods:**
   - **Cash on Delivery (COD)** → Activate.
   - **Create custom payment method:**
     - Name: `Advance payment - Bank / JazzCash / Easypaisa`
-    - Additional details: `Send the order total to: Bank ____ (Account title ____, Account no. ____) / JazzCash ____ / Easypaisa ____. Then WhatsApp the payment screenshot with your order number to ____.`
+    - Additional details: your account numbers and WhatsApp number.
     - Payment instructions: `We ship your order after we receive the payment screenshot.`
     - Activate.
-  - Shopify can't block COD for one product without an app. If someone picks COD for the lollipop kit, ask for advance payment on WhatsApp before you order it in DSers.
 - [ ] **Settings → Shipping and delivery → Pakistan:**
-  - `Standard delivery` → Rs 200.
-  - `Free delivery` → Rs 0 for orders of Rs 2,500 and up.
-- [ ] **Settings → Checkout:** shipping address phone number → **Required**.
+  - Rs 200 standard.
+  - Rs 0 for orders of Rs 2,500 and up.
+- [ ] **Settings → Checkout:** shipping address phone → **Required**.
 
-## 7. Go live (10 min)
+Imported (`dropship`) items need advance payment, because the parcel comes straight from the supplier and no courier collects cash. If someone picks COD for one, ask for advance payment on WhatsApp before you order it in DSers.
 
-- [ ] Test on your phone:
-  - Home → kit → the date line says **10–20 working days**.
-  - A bracelet (your own) says **3–5 working days**.
-  - Add to cart → the free-delivery bar shows.
-  - Checkout shows **COD** and **Advance payment**.
+## 6. Go live (5 min)
+
+- [ ] Phone test:
+  - Home: banner, categories (3 tiles with photos), the kit, New & loved grid, gallery.
+  - The kit page says **10–20 working days**.
+  - A bracelet page says **3–5**.
+  - Checkout shows COD and Advance payment.
 - [ ] **Online Store → Preferences:** copy the store password, or pick a plan to remove it.
-- [ ] Instagram @trinket_tales_1:
-  - Bio link → `https://wmyj10-ju.myshopify.com`
-  - Post the kit with the caption from Assignment 3.
-- [ ] In the Word files, fill in **Roll No.** and **Course**, then **Save as PDF** → submit.
-  - Paste a screenshot of the live product page in Assignment 3, section 3.
-- [ ] Take a **screenshot of DSers → My Products** showing the kit linked to AliExpress, for Assignment 2.
-- [ ] After marks: **change the password** and turn on **2-step verification**.
+- [ ] Instagram bio link → `https://wmyj10-ju.myshopify.com`
+- [ ] Assignments:
+  - Fill in Roll No. and Course.
+  - Paste a screenshot of the live kit page (Assignment 3) and of DSers My Products (Assignment 2).
+  - Save as PDF and submit.
+- [ ] After marks: change the password and turn on 2-step verification.
 
 ---
 
@@ -125,24 +116,14 @@ Price rule: (supplier price + shipping in US$) × 280 × 1.4, rounded to …99. 
 | What | Link |
 |---|---|
 | Store | https://wmyj10-ju.myshopify.com |
-| Main product (after step 2) | https://wmyj10-ju.myshopify.com/products/lollipop-makeup-kit-for-girls |
-| Main supplier (AliExpress) | https://www.aliexpress.com/item/4000781891981.html |
-| Backup supplier (AliExpress) | https://www.aliexpress.com/item/4000811549459.html |
-| Extra: butterfly bracelet | https://www.aliexpress.com/item/1005006413334032.html |
-| Extra: flower bead set | https://www.aliexpress.com/item/1005011994527815.html |
-| Extra: pearl bracelet | https://www.aliexpress.com/item/1005004840626196.html |
+| Main product | https://wmyj10-ju.myshopify.com/products/lollipop-makeup-kit-for-girls |
+| Supplier you imported | https://www.aliexpress.com/item/1005012993298696.html |
+| Collections | /collections/kids-makeup-gifts · /collections/handmade-bracelets · /collections/gift-boxes-and-bundles |
 | Instagram | https://www.instagram.com/trinket_tales_1 |
 
 ---
 
 ## Text to paste
-
-### About Us
-Trinket Tales started with a simple idea: small things can bring big happiness.
-
-We pick cute, gift-ready things for girls, from washable makeup gift boxes to handmade bracelets and little gift bundles. They're the kind of surprise that makes a birthday, an Eid morning or an ordinary day a bit brighter. Every order is checked, packed with care and delivered anywhere in Pakistan.
-
-Follow us on Instagram @trinket_tales_1 for new arrivals.
 
 ### Shipping Policy
 We deliver all over Pakistan.

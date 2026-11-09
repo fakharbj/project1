@@ -17,7 +17,9 @@ Each part comes as `.docx` (editable) and `.pdf`.
 
 ## Store kit
 - `store/FINAL-CHECKLIST.md` / `.pdf` – every step to production, final links, and text to paste (policies, About).
-- `store/Trinket-Tales-Theme.zip` – theme v4 (official Dawn 16.1.1 + brand design). Delivery dates switch automatically: products tagged `dropship` show 10–20 working days, everything else 3–5.
+- `store/Trinket-Tales-Theme.zip` – theme v5 (official Dawn 16.1.1 + brand design): banner, trust bar, shop-by-category tiles, featured product, product grid, brand story, photo gallery, quick answers. Delivery dates switch on the `dropship` tag.
+- `store/instagram-products/` – import file for the Instagram products (Flower Bead Bracelet Set, Pearl Bracelet with Jade Bead) plus cleaned product photos.
+- `store/brand/banner-desktop-chatgpt.jpg` – desktop hero banner, cropped for the banner section.
 - `store/product-import.csv` – import file for the bear-bag pouch (own Instagram stock, not dropshipped). Store currency must be PKR.
 - `store/photos/` – 6 listing photos, all cropped to 4:5.
 - `store/brand/` – logo (round PNG, transparent), square logo, favicon.
