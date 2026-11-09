@@ -1,0 +1,19 @@
+{%- comment -%} One item of the Welcome card. {%- endcomment -%}
+<li class="tt-welcome__item" {{ block.shopify_attributes }}>
+  {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}" class="tt-welcome__link">{%- else -%}<span class="tt-welcome__link">{%- endif -%}
+    <span class="tt-welcome__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        {%- case block.settings.icon -%}
+          {%- when 'bracelet' -%}<circle cx="12" cy="11" r="7" stroke-dasharray="0.1 3.2" stroke-width="2.8"/><path d="M12 22s-2.6-1.6-2.6-3.4a1.3 1.3 0 0 1 2.6-.6 1.3 1.3 0 0 1 2.6.6c0 1.8-2.6 3.4-2.6 3.4z"/>
+          {%- when 'charm' -%}<path d="M12 2.5v6"/><circle cx="12" cy="11.4" r="2.1"/><circle cx="15.6" cy="14" r="2.1"/><circle cx="14.2" cy="18.2" r="2.1"/><circle cx="9.8" cy="18.2" r="2.1"/><circle cx="8.4" cy="14" r="2.1"/>
+          {%- when 'keychain' -%}<circle cx="12" cy="4.5" r="2.5"/><path d="M12 7v2.5"/><circle cx="9.3" cy="11.5" r="1.4"/><circle cx="14.7" cy="11.5" r="1.4"/><circle cx="12" cy="15.5" r="4.5"/><path d="M10.6 15.2h.01M13.4 15.2h.01M11 17.3c.6.5 1.4.5 2 0"/>
+          {%- when 'bangles' -%}<ellipse cx="12" cy="9" rx="8" ry="3"/><ellipse cx="12" cy="13" rx="8" ry="3"/><ellipse cx="12" cy="17" rx="8" ry="3"/>
+          {%- when 'makeup' -%}<path d="M8.5 21.5h7v-8h-7z"/><path d="M9.5 13.5V8.2l5-3v8.3"/>
+          {%- when 'jewellery' -%}<path d="M12 11c-2-3-6-4.8-8-3.8s-.5 5.3 2.7 5.5c2.2.1 4.2-.6 5.3-1.7Z"/><path d="M12 11c2-3 6-4.8 8-3.8s.5 5.3-2.7 5.5c-2.2.1-4.2-.6-5.3-1.7Z"/><circle cx="12" cy="17" r="3"/>
+          {%- else -%}<path d="M4 10.5h16v10H4zM3 7.5h18v3H3zM12 7.5v13"/><path d="M12 7.5c-1-3-4.5-3.8-5-1.8-.4 1.6 2.3 1.8 5 1.8zM12 7.5c1-3 4.5-3.8 5-1.8.4 1.6-2.3 1.8-5 1.8z"/>
+        {%- endcase -%}
+      </svg>
+    </span>
+    <span class="tt-welcome__label">{{ block.settings.label | escape }}</span>
+  {%- if block.settings.link != blank -%}</a>{%- else -%}</span>{%- endif -%}
+</li>
