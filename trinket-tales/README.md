@@ -1,0 +1,37 @@
+# Trinket Tales – connected e-commerce project
+
+One product carried through all four assignments: **Dreamy Kids Makeup Set for Girls (gift set, packs of 1–4 kits)**, dropshipped from AliExpress through DSers and sold on a Shopify store, with Instagram @trinket_tales_1 bringing buyers to it.
+
+| Part | File |
+|---|---|
+| Cover + overview | `assignments/00-Cover-and-Overview` |
+| 1. Keyword & niche research | `assignments/01-Keyword-and-Niche-Research` |
+| 2. Product hunting (incl. dropshipping supplier) | `assignments/02-Product-Hunting` |
+| 3. Product listing | `assignments/03-Product-Listing` |
+| 4. Competitor analysis + MINISO case study | `assignments/04-Competitor-Analysis-and-Case-Study` |
+| All in one PDF | `assignments/Trinket-Tales-Complete-Project.pdf` |
+
+Each part comes as `.docx` (editable) and `.pdf`.
+
+**Before submitting:** see `FINAL-DELIVERY.pdf` (Roll No., Course and two screenshots).
+
+## Store kit
+- `FINAL-DELIVERY.md` / `.pdf` – what to hand in, final links, last checks on the live store.
+- `store/STORE-FIXES.md` / `.pdf` – review of the live store (9 Nov): what's still missing, with texts to paste.
+- `store/FINAL-CHECKLIST.md` / `.pdf` – every step to production, final links, and the policy texts.
+- `store/Trinket-Tales-Theme.zip` – theme v8 (official Dawn 16.1.1 + brand design): calm product pages, left-aligned layout, hero that fits the image, WhatsApp chat, banner, trust bar, shop-by-category tiles, featured product, product grid, Instagram-style welcome card, photo gallery, quick answers. Delivery dates switch on the `dropship` tag.
+- `store/code-update-v8/` – the v8 changes as copy-paste files, for a live theme that is already set up.
+- AliExpress products on the store (through DSers): Dreamy Kids Makeup Set (`aliexpress.com/item/1005012993298696.html`, main product) and Bohemian Flower Beaded Bracelet Set (`aliexpress.com/item/1005011994527815.html`).
+- `store/instagram-products/` – import file for the Instagram products (Flower Bead Bracelet Set, Pearl Bracelet with Jade Bead) plus cleaned product photos.
+- `store/brand/banner-desktop-chatgpt.jpg` – desktop hero banner, cropped for the banner section.
+- `store/product-import.csv` – import file for the bear-bag pouch (own Instagram stock, not dropshipped). Store currency must be PKR.
+- `store/photos/` – 6 listing photos, all cropped to 4:5.
+- `store/brand/` – header wordmark (transparent PNG), round logo, square logo, favicon, desktop banner.
+
+## The project in one line each
+- **Niche:** kids' makeup gift sets for girls aged about 6–12, bought as birthday, Eid and return gifts.
+- **Main keyword:** kids makeup kit for girls.
+- **Price:** Rs 2,999 for one kit (compare-at Rs 3,999), advance payment for this imported item.
+- **Supplier:** AliExpress through DSers (main), a backup AliExpress seller, and local stock later.
+- **Rest of the store:** own Instagram range (pouch, bracelets, gift bundles) sold from own stock with cash on delivery, plus a second AliExpress product (flower bead bracelet set).
+- **Competitors:** Daraz, toy stores, Markaz resellers, OLX, Instagram gift pages; case study MINISO.

@@ -1,0 +1,65 @@
+{%- liquid
+  assign tt_col = section.settings.collection
+  if tt_col == blank or tt_col.products_count == 0
+    assign tt_col = collections['all']
+  endif
+  assign tt_count = 0
+-%}
+<div class="tt-gallery color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width tt-gallery__inner">
+    <div class="tt-section-head">
+      {%- if section.settings.caption != blank -%}
+        <p class="tt-eyebrow">{{ section.settings.caption | escape }}</p>
+      {%- endif -%}
+      <h2 class="h2 tt-section-head__title">{{ section.settings.heading }}</h2>
+    </div>
+    {%- if tt_col != blank -%}
+      <ul class="tt-gallery__grid" role="list">
+        {%- for p in tt_col.products -%}
+          {%- for im in p.images -%}
+            {%- if section.settings.photos == 'featured' and forloop.index > 1 -%}{%- continue -%}{%- endif -%}
+            {%- if tt_count < 6 -%}
+              {%- assign tt_count = tt_count | plus: 1 -%}
+              <li class="tt-gallery__item">
+                <a href="{{ p.url }}" class="tt-gallery__link">
+                  {{ im | image_url: width: 500 | image_tag: loading: 'lazy', widths: '200, 300, 400, 500', sizes: '(min-width: 990px) 16vw, 33vw', alt: p.title }}
+                </a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </ul>
+    {%- elsif request.design_mode -%}
+      <p class="tt-editor-hint">Add products with photos to fill this gallery.</p>
+    {%- endif -%}
+    {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+      <div class="tt-gallery__cta">
+        <a href="{{ section.settings.button_link }}" class="button button--primary" target="_blank" rel="noopener">{{ section.settings.button_label | escape }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Photo gallery",
+  "tag": "section",
+  "class": "section tt-section",
+  "settings": [
+    { "type": "collection", "id": "collection", "label": "Collection (photos come from its products)", "info": "Leave empty to use all products." },
+    {
+      "type": "select", "id": "photos", "label": "Photos to show", "default": "featured",
+      "options": [
+        { "value": "featured", "label": "Main photo of each product" },
+        { "value": "all", "label": "All photos" }
+      ]
+    },
+    { "type": "text", "id": "caption", "label": "Small heading", "default": "@trinket_tales_1" },
+    { "type": "inline_richtext", "id": "heading", "label": "Heading", "default": "Follow our <em>little joys</em>" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Follow on Instagram" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "t:sections.all.colors.label", "default": "scheme-1" }
+  ],
+  "presets": [{ "name": "Photo gallery" }]
+}
+{% endschema %}
